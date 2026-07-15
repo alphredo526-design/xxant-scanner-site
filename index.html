@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Official integration page for Xxant CS2 Scanner.">
+  <title>Xxant CS2 Scanner</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --background: #080b10;
+      --panel: #11161e;
+      --line: #2b3543;
+      --accent: #ef3340;
+      --text: #f7f9fc;
+      --muted: #8fa2ba;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 20px;
+      background:
+        radial-gradient(circle at 50% 0, #1a2330 0, transparent 45%),
+        var(--background);
+      color: var(--text);
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    main {
+      width: min(720px, 100%);
+      padding: clamp(32px, 7vw, 56px);
+      border: 1px solid var(--line);
+      border-left: 4px solid var(--accent);
+      border-radius: 14px;
+      background: linear-gradient(145deg, #121821fa, #0a0e13fa);
+      box-shadow: 0 28px 90px #0009;
+    }
+
+    .brand {
+      font-size: clamp(46px, 10vw, 78px);
+      font-weight: 800;
+      font-style: italic;
+      letter-spacing: -4px;
+      line-height: 1;
+    }
+
+    .brand span { color: var(--accent); }
+
+    h1 {
+      margin: 24px 0 12px;
+      font-size: clamp(20px, 4vw, 28px);
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .status {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 30px;
+      padding: 10px 15px;
+      border: 1px solid #245a3a;
+      border-radius: 9px;
+      background: #0c2115;
+      color: #6ff0a0;
+      font-weight: 600;
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #64e890;
+      box-shadow: 0 0 12px #64e890;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="brand"><span>X</span>xant</div>
+    <h1>CS2 Market Intelligence</h1>
+    <p>Official project page for the Xxant CS2 Scanner desktop application and marketplace API integrations.</p>
+    <div class="status"><span class="dot"></span>Project online</div>
+  </main>
+</body>
+</html>
