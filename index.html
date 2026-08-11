@@ -1,97 +1,168 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Official integration page for Xxant CS2 Scanner.">
-  <title>Xxant CS2 Scanner</title>
-  <style>
-    :root {
-      color-scheme: dark;
-      --background: #080b10;
-      --panel: #11161e;
-      --line: #2b3543;
-      --accent: #ef3340;
-      --text: #f7f9fc;
-      --muted: #8fa2ba;
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      min-height: 100vh;
-      display: grid;
-      place-items: center;
-      padding: 20px;
-      background:
-        radial-gradient(circle at 50% 0, #1a2330 0, transparent 45%),
-        var(--background);
-      color: var(--text);
-      font-family: "Segoe UI", Arial, sans-serif;
-    }
-
-    main {
-      width: min(720px, 100%);
-      padding: clamp(32px, 7vw, 56px);
-      border: 1px solid var(--line);
-      border-left: 4px solid var(--accent);
-      border-radius: 14px;
-      background: linear-gradient(145deg, #121821fa, #0a0e13fa);
-      box-shadow: 0 28px 90px #0009;
-    }
-
-    .brand {
-      font-size: clamp(46px, 10vw, 78px);
-      font-weight: 800;
-      font-style: italic;
-      letter-spacing: -4px;
-      line-height: 1;
-    }
-
-    .brand span { color: var(--accent); }
-
-    h1 {
-      margin: 24px 0 12px;
-      font-size: clamp(20px, 4vw, 28px);
-      letter-spacing: .08em;
-      text-transform: uppercase;
-    }
-
-    p {
-      margin: 0;
-      color: var(--muted);
-      line-height: 1.7;
-    }
-
-    .status {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      margin-top: 30px;
-      padding: 10px 15px;
-      border: 1px solid #245a3a;
-      border-radius: 9px;
-      background: #0c2115;
-      color: #6ff0a0;
-      font-weight: 600;
-    }
-
-    .dot {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: #64e890;
-      box-shadow: 0 0 12px #64e890;
-    }
-  </style>
+  <meta name="description" content="Xxant — настольный сканер предложений на торговых площадках предметов CS2.">
+  <meta name="theme-color" content="#07090d">
+  <title>Xxant — Market Intelligence</title>
+  <link rel="icon" href="site-assets/favicon.png">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Xxant home">
+      <img src="site-assets/xxant-logo.png" alt="Xxant">
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false">☰</button>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#features" data-ru="Возможности" data-en="Features">Возможности</a>
+      <a href="#workflow" data-ru="Как работает" data-en="How it works">Как работает</a>
+      <a href="#screens" data-ru="Интерфейс" data-en="Interface">Интерфейс</a>
+      <a href="guide.html" data-ru="Руководство" data-en="Guide">Руководство</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="header-actions">
+      <button class="lang-switch" type="button" aria-label="Change language"><span class="active">RU</span><span>EN</span></button>
+      <a class="button button-small button-outline" href="#access" data-ru="Ранний доступ" data-en="Early access">Ранний доступ</a>
+    </div>
+  </header>
+
   <main>
-    <div class="brand"><span>X</span>xant</div>
-    <h1>CS2 Market Intelligence</h1>
-    <p>Official project page for the Xxant CS2 Scanner desktop application and marketplace API integrations.</p>
-    <div class="status"><span class="dot"></span>Project online</div>
+    <section class="hero section">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="pulse"></span><span data-ru="Xxant CS2 Market Intelligence" data-en="Xxant CS2 Market Intelligence">Xxant CS2 Market Intelligence</span></p>
+        <h1 data-ru="Рынок под контролем. Одно сканирование — лучшие найденные предложения." data-en="Control the market. One scan — the strongest detected offers.">Рынок под контролем. Одно сканирование — лучшие найденные предложения.</h1>
+        <p class="hero-lead" data-ru="Xxant сравнивает предложения подключённых площадок, применяет вашу формулу расходов и показывает ожидаемую чистую прибыль и ROI." data-en="Xxant compares offers from connected marketplaces, applies your custom cost formula, and displays estimated net profit and ROI.">Xxant сравнивает предложения подключённых площадок, применяет вашу формулу расходов и показывает ожидаемую чистую прибыль и ROI.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#screens" data-ru="Посмотреть интерфейс" data-en="See the interface">Посмотреть интерфейс</a>
+          <a class="button button-ghost" href="#workflow" data-ru="Как это работает" data-en="How it works">Как это работает</a>
+        </div>
+        <div class="hero-notes">
+          <span data-ru="Windows 10/11" data-en="Windows 10/11">Windows 10/11</span>
+          <span data-ru="Ручное решение о покупке" data-en="You approve every purchase">Ручное решение о покупке</span>
+          <span data-ru="Личные API-ключи" data-en="Your own API keys">Личные API-ключи</span>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="terminal-glow"></div>
+        <div class="app-window">
+          <div class="window-bar"><span></span><span></span><span></span><b>XXANT / LIVE SCAN</b></div>
+          <img src="site-assets/scanner-results.png" alt="Xxant scanner results">
+        </div>
+        <div class="float-card float-card-top"><small>ROI</small><strong>+38.20%</strong><span data-ru="после расходов" data-en="after costs">после расходов</span></div>
+        <div class="float-card float-card-bottom"><small data-ru="СКАН" data-en="SCAN">СКАН</small><strong>9 markets</strong><span data-ru="одним нажатием" data-en="one action">одним нажатием</span></div>
+      </div>
+    </section>
+
+    <section class="proof-strip reveal" aria-label="Product principles">
+      <div><strong data-ru="Локально" data-en="Local-first">Локально</strong><span data-ru="Настройки хранятся на вашем ПК" data-en="Settings stay on your PC">Настройки хранятся на вашем ПК</span></div>
+      <div><strong data-ru="Зашифровано" data-en="Encrypted">Зашифровано</strong><span data-ru="API-ключи защищены Windows DPAPI" data-en="API keys are protected with Windows DPAPI">API-ключи защищены Windows DPAPI</span></div>
+      <div><strong data-ru="Под вашим контролем" data-en="User-controlled">Под вашим контролем</strong><span data-ru="Xxant не совершает покупки автоматически" data-en="Xxant never purchases automatically">Xxant не совершает покупки автоматически</span></div>
+      <div><strong data-ru="Проверяемо" data-en="Verifiable">Проверяемо</strong><span data-ru="Оффер открывается на исходной площадке" data-en="Every offer opens on its source marketplace">Оффер открывается на исходной площадке</span></div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="section-heading reveal">
+        <p class="eyebrow" data-ru="Не таблица цен. Рабочая станция." data-en="More than a price table">Не таблица цен. Рабочая станция.</p>
+        <h2 data-ru="Всё необходимое для быстрого анализа" data-en="Everything needed for faster analysis">Всё необходимое для быстрого анализа</h2>
+        <p data-ru="Xxant сокращает ручную проверку площадок до одного управляемого процесса." data-en="Xxant turns repetitive marketplace checks into one controlled workflow.">Xxant сокращает ручную проверку площадок до одного управляемого процесса.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card reveal"><span class="feature-index">01</span><h3 data-ru="Мульти-маркет сканирование" data-en="Multi-market scanning">Мульти-маркет сканирование</h3><p data-ru="Сравнение доступных предложений на подключённых площадках за один запуск." data-en="Compare available listings across connected marketplaces in a single scan.">Сравнение доступных предложений на подключённых площадках за один запуск.</p></article>
+        <article class="feature-card reveal"><span class="feature-index">02</span><h3 data-ru="Настраиваемая формула" data-en="Custom formula">Настраиваемая формула</h3><p data-ru="Добавляйте, переименовывайте и отключайте комиссии и расходы. Расчёт меняется вместе с формулой." data-en="Add, rename, or disable fees and costs. Calculations follow your formula.">Добавляйте, переименовывайте и отключайте комиссии и расходы. Расчёт меняется вместе с формулой.</p></article>
+        <article class="feature-card reveal"><span class="feature-index">03</span><h3 data-ru="Партии и ликвидность" data-en="Batch and liquidity">Партии и ликвидность</h3><p data-ru="Оценивайте среднюю цену партии, доступный объём, вложение, чистую прибыль и ROI." data-en="Estimate average batch price, available depth, investment, net profit, and ROI.">Оценивайте среднюю цену партии, доступный объём, вложение, чистую прибыль и ROI.</p></article>
+        <article class="feature-card reveal"><span class="feature-index">04</span><h3 data-ru="Точные фильтры" data-en="Exact filters">Точные фильтры</h3><p data-ru="Выбирайте конкретные кейсы, скины, износ и варианты StatTrak — без сканирования лишнего." data-en="Select exact cases, skins, wear, and StatTrak variants without scanning noise.">Выбирайте конкретные кейсы, скины, износ и варианты StatTrak — без сканирования лишнего.</p></article>
+        <article class="feature-card reveal"><span class="feature-index">05</span><h3 data-ru="Ручные и внешние Steam-цены" data-en="Steam reference options">Ручные и внешние Steam-цены</h3><p data-ru="Используйте подтверждённую Steam-цену, ручной ориентир или подключённый reference-источник." data-en="Use validated Steam prices, manual references, or a connected reference source.">Используйте подтверждённую Steam-цену, ручной ориентир или подключённый reference-источник.</p></article>
+        <article class="feature-card reveal"><span class="feature-index">06</span><h3 data-ru="Открытие конкретного оффера" data-en="Direct offer opening">Открытие конкретного оффера</h3><p data-ru="После анализа Xxant открывает страницу найденного предложения. Решение всегда принимает пользователь." data-en="After analysis, Xxant opens the detected listing page. You always make the decision.">После анализа Xxant открывает страницу найденного предложения. Решение всегда принимает пользователь.</p></article>
+      </div>
+    </section>
+
+    <section class="section workflow" id="workflow">
+      <div class="section-heading reveal">
+        <p class="eyebrow" data-ru="Три шага" data-en="Three steps">Три шага</p>
+        <h2 data-ru="Настройте один раз. Анализируйте постоянно." data-en="Configure once. Analyze continuously.">Настройте один раз. Анализируйте постоянно.</h2>
+      </div>
+      <div class="steps">
+        <article class="step reveal"><div class="step-number">1</div><div><h3 data-ru="Подключите источники" data-en="Connect sources">Подключите источники</h3><p data-ru="Выберите площадки и добавьте личные API-ключи там, где они требуются." data-en="Choose marketplaces and add your personal API keys where required.">Выберите площадки и добавьте личные API-ключи там, где они требуются.</p></div></article>
+        <article class="step reveal"><div class="step-number">2</div><div><h3 data-ru="Задайте правила" data-en="Set your rules">Задайте правила</h3><p data-ru="Выберите предметы, цену сравнения, размер партии, лимиты и формулу расходов." data-en="Select items, reference prices, batch size, limits, and your cost formula.">Выберите предметы, цену сравнения, размер партии, лимиты и формулу расходов.</p></div></article>
+        <article class="step reveal"><div class="step-number">3</div><div><h3 data-ru="Проверьте результат" data-en="Review results">Проверьте результат</h3><p data-ru="Запустите сканирование, изучите расчёт и откройте выбранный оффер на площадке." data-en="Run a scan, inspect the calculation, and open the selected offer on its marketplace.">Запустите сканирование, изучите расчёт и откройте выбранный оффер на площадке.</p></div></article>
+      </div>
+    </section>
+
+    <section class="section" id="screens">
+      <div class="section-heading reveal">
+        <p class="eyebrow" data-ru="Настоящий интерфейс" data-en="Real product interface">Настоящий интерфейс</p>
+        <h2 data-ru="Создан для ежедневной работы" data-en="Built for daily use">Создан для ежедневной работы</h2>
+        <p data-ru="Нажмите на изображение, чтобы открыть его полностью." data-en="Click an image to view it full size.">Нажмите на изображение, чтобы открыть его полностью.</p>
+      </div>
+      <div class="gallery">
+        <button class="shot shot-wide reveal" type="button" data-image="site-assets/scanner-results.png"><img src="site-assets/scanner-results.png" alt="Scanner results"><span data-ru="Результаты сканирования" data-en="Scan results">Результаты сканирования</span></button>
+        <button class="shot reveal" type="button" data-image="site-assets/deal-details.png"><img src="site-assets/deal-details.png" alt="Deal details"><span data-ru="Подробная сводка сделок" data-en="Detailed deal summary">Подробная сводка сделок</span></button>
+        <button class="shot reveal" type="button" data-image="site-assets/case-catalog.png"><img src="site-assets/case-catalog.png" alt="Case catalog"><span data-ru="Каталог и ручные цены" data-en="Catalog and manual prices">Каталог и ручные цены</span></button>
+        <button class="shot reveal" type="button" data-image="site-assets/formula-settings.png"><img src="site-assets/formula-settings.png" alt="Formula settings"><span data-ru="Гибкая формула расходов" data-en="Flexible cost formula">Гибкая формула расходов</span></button>
+        <button class="shot reveal" type="button" data-image="site-assets/item-filter.png"><img src="site-assets/item-filter.png" alt="Item filters"><span data-ru="Точные фильтры предметов" data-en="Exact item filters">Точные фильтры предметов</span></button>
+      </div>
+    </section>
+
+    <section class="section markets" id="markets">
+      <div class="section-heading reveal">
+        <p class="eyebrow" data-ru="Подключаемые источники" data-en="Connectable sources">Подключаемые источники</p>
+        <h2 data-ru="Площадки подключаются модульно" data-en="Marketplace modules, connected your way">Площадки подключаются модульно</h2>
+        <p data-ru="Доступность зависит от публичного API, личного ключа и условий конкретной площадки." data-en="Availability depends on public APIs, personal credentials, and each marketplace's terms.">Доступность зависит от публичного API, личного ключа и условий конкретной площадки.</p>
+      </div>
+      <div class="market-cloud reveal">
+        <span>Skinport</span><span>CSFloat</span><span>Market.CSGO</span><span>DMarket</span><span>Waxpeer</span><span>White.Market</span><span>ShadowPay</span><span>SkinBaron</span><span>SIH Market</span>
+      </div>
+    </section>
+
+    <section class="section security" id="security">
+      <div class="security-copy reveal">
+        <p class="eyebrow" data-ru="Безопасность по умолчанию" data-en="Security by default">Безопасность по умолчанию</p>
+        <h2 data-ru="Ваши аккаунты остаются вашими" data-en="Your accounts remain yours">Ваши аккаунты остаются вашими</h2>
+        <p data-ru="Xxant не запрашивает пароль Steam, не хранит платёжные данные и не совершает автоматические сделки. API-ключи сохраняются локально в зашифрованном виде." data-en="Xxant does not request your Steam password, store payment information, or execute automatic trades. API keys are stored locally in encrypted form.">Xxant не запрашивает пароль Steam, не хранит платёжные данные и не совершает автоматические сделки. API-ключи сохраняются локально в зашифрованном виде.</p>
+        <a class="text-link" href="privacy.html" data-ru="Политика конфиденциальности →" data-en="Privacy policy →">Политика конфиденциальности →</a>
+      </div>
+      <div class="security-list reveal">
+        <div><b>01</b><span data-ru="Windows DPAPI для локальных секретов" data-en="Windows DPAPI for local secrets">Windows DPAPI для локальных секретов</span></div>
+        <div><b>02</b><span data-ru="Один лицензионный ключ — одно устройство" data-en="One license key — one device">Один лицензионный ключ — одно устройство</span></div>
+        <div><b>03</b><span data-ru="Только чтение рыночных данных" data-en="Read-only market data access">Только чтение рыночных данных</span></div>
+        <div><b>04</b><span data-ru="Подтверждение действий на стороне площадки" data-en="Actions are confirmed on the marketplace">Подтверждение действий на стороне площадки</span></div>
+      </div>
+    </section>
+
+    <section class="section access" id="access">
+      <div class="access-panel reveal">
+        <div>
+          <p class="eyebrow" data-ru="Закрытое тестирование" data-en="Closed testing">Закрытое тестирование</p>
+          <h2 data-ru="Xxant готовится к первому публичному выпуску" data-en="Xxant is preparing for its first public release">Xxant готовится к первому публичному выпуску</h2>
+          <p data-ru="Продажи ещё не открыты. До запуска мы завершим установщик, оплату, активацию и финальную проверку пользовательского пути." data-en="Sales are not open yet. Before launch, we will complete the installer, payments, activation, and the final customer-flow test.">Продажи ещё не открыты. До запуска мы завершим установщик, оплату, активацию и финальную проверку пользовательского пути.</p>
+        </div>
+        <div class="access-card"><span data-ru="План лицензии" data-en="Planned license">План лицензии</span><strong data-ru="Разовая покупка" data-en="One-time purchase">Разовая покупка</strong><small data-ru="1 устройство · личные API · обновления продукта" data-en="1 device · personal APIs · product updates">1 устройство · личные API · обновления продукта</small><button class="button button-primary" type="button" disabled data-ru="Скоро" data-en="Coming soon">Скоро</button></div>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq">
+      <div class="section-heading reveal"><p class="eyebrow">FAQ</p><h2 data-ru="Коротко о главном" data-en="Essential answers">Коротко о главном</h2></div>
+      <div class="faq-list">
+        <details class="reveal"><summary data-ru="Xxant покупает предметы автоматически?" data-en="Does Xxant buy items automatically?">Xxant покупает предметы автоматически?</summary><p data-ru="Нет. Сканер анализирует данные и открывает выбранное предложение. Покупку подтверждает пользователь на самой площадке." data-en="No. The scanner analyzes data and opens a selected listing. You confirm any purchase on the marketplace itself.">Нет. Сканер анализирует данные и открывает выбранное предложение. Покупку подтверждает пользователь на самой площадке.</p></details>
+        <details class="reveal"><summary data-ru="Нужно ли вводить пароль Steam?" data-en="Do I need to enter my Steam password?">Нужно ли вводить пароль Steam?</summary><p data-ru="Нет. В Xxant нет поля для пароля Steam. Авторизация происходит только на официальных сайтах, открытых в вашем браузере." data-en="No. Xxant has no Steam-password field. Authentication occurs only on official sites opened in your browser.">Нет. В Xxant нет поля для пароля Steam. Авторизация происходит только на официальных сайтах, открытых в вашем браузере.</p></details>
+        <details class="reveal"><summary data-ru="Гарантирует ли программа прибыль?" data-en="Does the software guarantee profit?">Гарантирует ли программа прибыль?</summary><p data-ru="Нет. Результаты являются расчётной оценкой по данным API и настройкам пользователя. Цены и наличие могут измениться." data-en="No. Results are estimates based on API data and your settings. Prices and availability can change.">Нет. Результаты являются расчётной оценкой по данным API и настройкам пользователя. Цены и наличие могут измениться.</p></details>
+        <details class="reveal"><summary data-ru="Где хранятся API-ключи?" data-en="Where are API keys stored?">Где хранятся API-ключи?</summary><p data-ru="Локально на компьютере пользователя, в файле, зашифрованном средствами Windows DPAPI." data-en="Locally on the user's computer in a file encrypted with Windows DPAPI.">Локально на компьютере пользователя, в файле, зашифрованном средствами Windows DPAPI.</p></details>
+        <details class="reveal"><summary data-ru="Xxant связан с Valve или маркетами?" data-en="Is Xxant affiliated with Valve or marketplaces?">Xxant связан с Valve или маркетами?</summary><p data-ru="Нет. Xxant — независимый аналитический продукт и не является официальным продуктом Valve или перечисленных торговых площадок." data-en="No. Xxant is an independent analytics product and is not an official product of Valve or any listed marketplace.">Нет. Xxant — независимый аналитический продукт и не является официальным продуктом Valve или перечисленных торговых площадок.</p></details>
+      </div>
+    </section>
   </main>
+
+  <footer>
+    <div class="footer-brand"><img src="site-assets/xxant-logo.png" alt="Xxant"><p data-ru="Независимый инструмент анализа рынка предметов CS2." data-en="Independent CS2 item market analytics software.">Независимый инструмент анализа рынка предметов CS2.</p></div>
+    <div class="footer-links"><a href="guide.html" data-ru="Руководство" data-en="Guide">Руководство</a><a href="terms.html" data-ru="Условия" data-en="Terms">Условия</a><a href="privacy.html" data-ru="Конфиденциальность" data-en="Privacy">Конфиденциальность</a></div>
+    <p class="legal" data-ru="Xxant не связан с Valve Corporation. Counter-Strike, CS2, Steam и связанные материалы принадлежат соответствующим правообладателям. Названия площадок используются только для идентификации источников данных." data-en="Xxant is not affiliated with Valve Corporation. Counter-Strike, CS2, Steam, and related materials belong to their respective owners. Marketplace names are used only to identify data sources.">Xxant не связан с Valve Corporation. Counter-Strike, CS2, Steam и связанные материалы принадлежат соответствующим правообладателям. Названия площадок используются только для идентификации источников данных.</p>
+    <span class="copyright">© 2026 Xxant</span>
+  </footer>
+
+  <dialog class="image-modal"><button type="button" aria-label="Close">×</button><img alt="Xxant interface preview"></dialog>
+  <script src="script.js"></script>
 </body>
 </html>
