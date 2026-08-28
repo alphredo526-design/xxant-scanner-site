@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://alphredo526-design.github.io/xxant-scanner-site/sitemap.xml
-
+Sitemap: https://xxantscanner.com/sitemap.xml
