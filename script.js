@@ -15,7 +15,9 @@ function setLanguage(language) {
       item.classList.toggle('active', item.textContent.toLowerCase() === lang);
     });
   }
-  document.title = lang === 'ru' ? 'Xxant — Market Intelligence' : 'Xxant — Market Intelligence';
+  document.title = lang === 'ru'
+    ? (document.body.dataset.titleRu || 'Xxant — Market Intelligence')
+    : (document.body.dataset.titleEn || 'Xxant — Market Intelligence');
 }
 
 setLanguage(localStorage.getItem('xxant-site-language') || (navigator.language.startsWith('ru') ? 'ru' : 'en'));

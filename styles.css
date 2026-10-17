@@ -156,6 +156,22 @@ footer { width: min(var(--max), calc(100% - 48px)); margin: 0 auto; display: gri
 .document .updated { color: #718198; font-size: 12px; }
 .doc-nav { display: flex; gap: 12px; margin-bottom: 24px; }
 
+.updates-page main { width: min(980px, calc(100% - 40px)); margin: 0 auto; padding: 70px 0 110px; }
+.updates-intro { margin-bottom: 32px; padding: clamp(25px, 5vw, 52px); border: 1px solid var(--line); border-left: 3px solid var(--accent-bright); border-radius: var(--radius); background: radial-gradient(circle at 90% 0, #8e233a33, transparent 45%), #0d1219; }
+.updates-intro h1 { font-size: clamp(38px, 6vw, 66px); }
+.updates-intro > p:not(.eyebrow) { max-width: 720px; color: var(--muted); line-height: 1.7; }
+.release-list { display: grid; gap: 15px; }
+.release-card { display: grid; grid-template-columns: 165px 1fr; gap: 26px; padding: 28px; border: 1px solid var(--line); border-radius: 14px; background: linear-gradient(145deg, #111721, #0b0f15); }
+.release-card.latest { border-color: #74313e; box-shadow: 0 18px 55px #0005; }
+.release-meta { display: flex; flex-direction: column; gap: 8px; }
+.release-meta strong { font-size: 18px; }
+.release-meta time { color: var(--blue-muted); font-size: 12px; }
+.release-badge { width: fit-content; padding: 5px 8px; border: 1px solid #316346; border-radius: 999px; color: var(--green); background: #102218; font-size: 10px; font-weight: 800; letter-spacing: .08em; }
+.release-copy h2 { margin: 0 0 14px; font-size: 24px; }
+.release-copy ul { margin: 0; padding-left: 19px; color: #aab5c2; line-height: 1.65; }
+.release-copy li + li { margin-top: 7px; }
+.updates-download { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 34px; }
+
 @media (max-width: 1000px) {
   .nav-toggle { display: block; }
   .nav { position: absolute; top: 77px; left: 18px; right: 18px; display: none; flex-direction: column; align-items: stretch; gap: 0; padding: 10px; border: 1px solid var(--line); border-radius: 12px; background: #0b1017fa; box-shadow: 0 25px 70px #000a; }
@@ -195,6 +211,7 @@ footer { width: min(var(--max), calc(100% - 48px)); margin: 0 auto; display: gri
   .access-panel { grid-template-columns: 1fr; padding: 26px; }
   footer { width: calc(100% - 30px); grid-template-columns: 1fr; }
   .legal { grid-column: auto; }
+  .release-card { grid-template-columns: 1fr; gap: 18px; padding: 22px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

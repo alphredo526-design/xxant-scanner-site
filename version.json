@@ -1,0 +1,21 @@
+{
+  "version": "0.50.0",
+  "display_version": "v0.50 Update Center",
+  "released_at": "2026-10-17",
+  "download_url": "https://xxantscanner.com/downloads/Xxant-CS2-Scanner-Setup.exe?v=0.50.0",
+  "changelog_url": "https://xxantscanner.com/updates.html",
+  "sha256": "997ea692332ccc2519cc29e9182744991163570b203d3e8db1d573e940a59d27",
+  "size_bytes": 43386106,
+  "summary": {
+    "ru": [
+      "Фоновая проверка новых версий без задержки запуска.",
+      "Безопасные ссылки на официальный установщик и историю изменений.",
+      "Исправленный SPREAD FINDER для вывода Steam-баланса."
+    ],
+    "en": [
+      "Background update checks without delaying startup.",
+      "Safe links to the official installer and release notes.",
+      "Corrected SPREAD FINDER for Steam balance cashout analysis."
+    ]
+  }
+}

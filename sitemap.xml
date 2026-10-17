@@ -15,6 +15,13 @@
   </url>
 
   <url>
+    <loc>https://xxantscanner.com/updates.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
     <loc>https://xxantscanner.com/terms.html</loc>
     <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
