@@ -1,21 +1,21 @@
 {
-  "version": "0.50.0",
-  "display_version": "v0.50 Update Center",
-  "released_at": "2026-10-17",
-  "download_url": "https://xxantscanner.com/downloads/Xxant-CS2-Scanner-Setup.exe?v=0.50.0",
+  "version": "0.61.0",
+  "display_version": "v0.61 Slate UI & Language Audit",
+  "released_at": "2026-10-20",
+  "download_url": "https://xxantscanner.com/downloads/Xxant-CS2-Scanner-Setup.exe?v=0.61.0",
   "changelog_url": "https://xxantscanner.com/updates.html",
-  "sha256": "997ea692332ccc2519cc29e9182744991163570b203d3e8db1d573e940a59d27",
-  "size_bytes": 43386106,
+  "sha256": "472b8db9b73a185c89486c0934b448b240e6ad942bb31213e96b8b6ecab15bb8",
+  "size_bytes": 43415058,
   "summary": {
     "ru": [
-      "Фоновая проверка новых версий без задержки запуска.",
-      "Безопасные ссылки на официальный установщик и историю изменений.",
-      "Исправленный SPREAD FINDER для вывода Steam-баланса."
+      "Новая графитово-синяя тема Xxant Slate и исправленная светлая тема.",
+      "Spread Finder, сравнение цен по износам и безопасные фильтры офферов.",
+      "Проверенные переводы и компактное отображение цен без лишних нулей."
     ],
     "en": [
-      "Background update checks without delaying startup.",
-      "Safe links to the official installer and release notes.",
-      "Corrected SPREAD FINDER for Steam balance cashout analysis."
+      "New graphite-blue Xxant Slate theme and corrected light theme.",
+      "Spread Finder, wear-based Price Comparison, and safer listing filters.",
+      "Reviewed translations and compact price formatting without extra zeros."
     ]
   }
 }

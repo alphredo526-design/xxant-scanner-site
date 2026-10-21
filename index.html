@@ -3,20 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Xxant CS2 Scanner сравнивает цены Steam и CS2-маркетов, учитывает комиссии и расходы и показывает сделки с наибольшей потенциальной чистой прибылью и ROI.">
+  <meta name="description" content="Xxant CS2 Scanner сканирует CS2-маркеты, ищет потенциально выгодные сделки, сравнивает цены по износам и помогает находить предметы с минимальным разрывом между Steam и внешними площадками.">
   <meta name="robots" content="index, follow">
   <meta name="google-site-verification" content="7uea-67QIx6LZ5kMseh-My3NHYBqtKAp3g_TtYvFj0w">
   <link rel="canonical" href="https://xxantscanner.com/">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Xxant CS2 Scanner — поиск выгодных сделок CS2">
-  <meta property="og:description" content="Сравнение цен Steam и CS2-маркетов с учётом комиссий и расходов. Xxant показывает предложения с наибольшей потенциальной чистой прибылью и ROI.">
+  <meta property="og:title" content="Xxant CS2 Scanner — Spread Finder и анализ рынка CS2">
+  <meta property="og:description" content="Поиск потенциально выгодных сделок, сравнение цен и анализ разрыва между Steam и внешними CS2-маркетами.">
   <meta property="og:url" content="https://xxantscanner.com/">
-  <meta property="og:image" content="https://xxantscanner.com/site-assets/scanner-results.png">
+  <meta property="og:image" content="https://xxantscanner.com/site-assets/spread-finder.png">
   <meta property="og:site_name" content="Xxant Scanner">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Xxant CS2 Scanner — поиск выгодных сделок CS2">
-  <meta name="twitter:description" content="Сравнение цен Steam и CS2-маркетов с учётом комиссий и расходов. Xxant показывает предложения с наибольшей потенциальной чистой прибылью и ROI.">
-  <meta name="twitter:image" content="https://xxantscanner.com/site-assets/scanner-results.png">
+  <meta name="twitter:title" content="Xxant CS2 Scanner — Spread Finder и анализ рынка CS2">
+  <meta name="twitter:description" content="Поиск потенциально выгодных сделок, сравнение цен и анализ разрыва между Steam и внешними CS2-маркетами.">
+  <meta name="twitter:image" content="https://xxantscanner.com/site-assets/spread-finder.png">
   <meta name="theme-color" content="#07090d">
   <title>Xxant CS2 Scanner — поиск выгодных сделок и сравнение цен Steam и маркетов</title>
   <link rel="icon" href="site-assets/favicon.png">
@@ -42,9 +42,9 @@
         "url": "https://xxantscanner.com/",
         "image": "https://xxantscanner.com/site-assets/xxant-logo.png",
         "operatingSystem": "Windows 10, Windows 11",
-        "softwareVersion": "0.50.0",
-        "dateModified": "2026-10-17",
-        "downloadUrl": "https://xxantscanner.com/downloads/Xxant-CS2-Scanner-Setup.exe?v=0.50.0",
+        "softwareVersion": "0.61.0",
+        "dateModified": "2026-10-21",
+        "downloadUrl": "https://xxantscanner.com/downloads/Xxant-CS2-Scanner-Setup.exe?v=0.61.0",
         "applicationCategory": "BusinessApplication",
         "description": "Xxant CS2 Scanner сравнивает цены Steam и подключённых CS2-маркетов, учитывает комиссии и расходы и показывает предложения с наибольшей потенциальной чистой прибылью и ROI.",
         "publisher": {
@@ -66,11 +66,13 @@
     <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false">☰</button>
     <nav class="nav" aria-label="Main navigation">
       <a href="#features" data-ru="Возможности" data-en="Features">Возможности</a>
+      <a href="#modules" data-ru="Модули" data-en="Modules">Модули</a>
       <a href="#workflow" data-ru="Как работает" data-en="How it works">Как работает</a>
       <a href="#screens" data-ru="Интерфейс" data-en="Interface">Интерфейс</a>
       <a href="updates.html" data-ru="Обновления" data-en="Updates">Обновления</a>
       <a href="guide.html" data-ru="Руководство" data-en="Guide">Руководство</a>
       <a href="#faq">FAQ</a>
+      <a href="https://t.me/XxantScanner" target="_blank" rel="noopener noreferrer">Telegram</a>
     </nav>
     <div class="header-actions">
       <button class="lang-switch" type="button" aria-label="Change language"><span class="active">RU</span><span>EN</span></button>
@@ -82,11 +84,12 @@
     <section class="hero section">
       <div class="hero-copy reveal">
         <p class="eyebrow"><span class="pulse"></span><span data-ru="Xxant CS2 Market Intelligence" data-en="Xxant CS2 Market Intelligence">Xxant CS2 Market Intelligence</span></p>
-        <h1 data-ru="Рынок под контролем. Одно сканирование — лучшие найденные предложения." data-en="Control the market. One scan — the strongest detected offers.">Рынок под контролем. Одно сканирование — лучшие найденные предложения.</h1>
-        <p class="hero-lead" data-ru="Xxant сравнивает предложения подключённых площадок, применяет вашу формулу расходов и показывает ожидаемую чистую прибыль и ROI." data-en="Xxant compares offers from connected marketplaces, applies your custom cost formula, and displays estimated net profit and ROI.">Xxant сравнивает предложения подключённых площадок, применяет вашу формулу расходов и показывает ожидаемую чистую прибыль и ROI.</p>
+        <h1 data-ru="Найдите лучший способ превратить Steam-баланс в ликвидный предмет." data-en="Find a better route from Steam balance to a liquid item.">Найдите лучший способ превратить Steam-баланс в ликвидный предмет.</h1>
+        <p class="hero-lead" data-ru="Spread Finder ищет минимальный ценовой разрыв, основной сканер показывает потенциально выгодные сделки, а сравнение цен выбирает лучший маркет для каждого износа." data-en="Spread Finder searches for the smallest price gap, the main scanner detects potentially profitable deals, and Price Comparison selects the best marketplace for each wear.">Spread Finder ищет минимальный ценовой разрыв, основной сканер показывает потенциально выгодные сделки, а сравнение цен выбирает лучший маркет для каждого износа.</p>
         <div class="hero-actions">
-          <a class="button button-primary" href="#screens" data-ru="Посмотреть интерфейс" data-en="See the interface">Посмотреть интерфейс</a>
-          <a class="button button-ghost" href="#workflow" data-ru="Как это работает" data-en="How it works">Как это работает</a>
+          <a class="button button-primary" href="#modules" data-ru="Как работают модули" data-en="How the modules work">Как работают модули</a>
+          <a class="button button-ghost" href="#screens" data-ru="Посмотреть интерфейс" data-en="See the interface">Посмотреть интерфейс</a>
+          <a class="button button-telegram" href="https://t.me/XxantScanner" target="_blank" rel="noopener noreferrer">Telegram · @XxantScanner</a>
         </div>
         <div class="hero-notes">
           <span data-ru="Windows 10/11" data-en="Windows 10/11">Windows 10/11</span>
@@ -98,17 +101,17 @@
         <div class="terminal-glow"></div>
         <div class="app-window">
           <div class="window-bar"><span></span><span></span><span></span><b>XXANT / LIVE SCAN</b></div>
-          <img src="site-assets/scanner-results.png" alt="Xxant scanner results">
+          <img src="site-assets/spread-finder.png" alt="Xxant Spread Finder interface">
         </div>
-        <div class="float-card float-card-top"><small>ROI</small><strong>+38.20%</strong><span data-ru="после расходов" data-en="after costs">после расходов</span></div>
-        <div class="float-card float-card-bottom"><small data-ru="СКАН" data-en="SCAN">СКАН</small><strong>9 markets</strong><span data-ru="одним нажатием" data-en="one action">одним нажатием</span></div>
+        <div class="float-card float-card-top"><small data-ru="ПРИМЕР ЗАЗОРА" data-en="EXAMPLE GAP">ПРИМЕР ЗАЗОРА</small><strong>0.08%</strong><span data-ru="меньше — лучше" data-en="lower is better">меньше — лучше</span></div>
+        <div class="float-card float-card-bottom"><small data-ru="АНАЛИЗ" data-en="ANALYSIS">АНАЛИЗ</small><strong>Steam + markets</strong><span data-ru="цена, спрос и лоты" data-en="price, demand, listings">цена, спрос и лоты</span></div>
       </div>
     </section>
 
     <section class="proof-strip reveal" aria-label="Product principles">
       <div><strong data-ru="Локально" data-en="Local-first">Локально</strong><span data-ru="Настройки хранятся на вашем ПК" data-en="Settings stay on your PC">Настройки хранятся на вашем ПК</span></div>
       <div><strong data-ru="Зашифровано" data-en="Encrypted">Зашифровано</strong><span data-ru="API-ключи защищены Windows DPAPI" data-en="API keys are protected with Windows DPAPI">API-ключи защищены Windows DPAPI</span></div>
-      <div><strong data-ru="Под вашим контролем" data-en="User-controlled">Под вашим контролем</strong><span data-ru="Xxant не совершает покупки автоматически" data-en="Xxant never purchases automatically">Xxant не совершает покупки автоматически</span></div>
+      <div><strong data-ru="Под вашим контролем" data-en="User-controlled">Под вашим контролем</strong><span data-ru="Готовые аналитические модули не покупают автоматически" data-en="Released analytics modules do not purchase automatically">Готовые аналитические модули не покупают автоматически</span></div>
       <div><strong data-ru="Проверяемо" data-en="Verifiable">Проверяемо</strong><span data-ru="Оффер открывается на исходной площадке" data-en="Every offer opens on its source marketplace">Оффер открывается на исходной площадке</span></div>
     </section>
 
@@ -119,13 +122,56 @@
         <p data-ru="Xxant сокращает ручную проверку площадок до одного управляемого процесса." data-en="Xxant turns repetitive marketplace checks into one controlled workflow.">Xxant сокращает ручную проверку площадок до одного управляемого процесса.</p>
       </div>
       <div class="feature-grid">
-        <article class="feature-card reveal"><span class="feature-index">01</span><h3 data-ru="Мульти-маркет сканирование" data-en="Multi-market scanning">Мульти-маркет сканирование</h3><p data-ru="Сравнение доступных предложений на подключённых площадках за один запуск." data-en="Compare available listings across connected marketplaces in a single scan.">Сравнение доступных предложений на подключённых площадках за один запуск.</p></article>
-        <article class="feature-card reveal"><span class="feature-index">02</span><h3 data-ru="Настраиваемая формула" data-en="Custom formula">Настраиваемая формула</h3><p data-ru="Добавляйте, переименовывайте и отключайте комиссии и расходы. Расчёт меняется вместе с формулой." data-en="Add, rename, or disable fees and costs. Calculations follow your formula.">Добавляйте, переименовывайте и отключайте комиссии и расходы. Расчёт меняется вместе с формулой.</p></article>
-        <article class="feature-card reveal"><span class="feature-index">03</span><h3 data-ru="Партии и ликвидность" data-en="Batch and liquidity">Партии и ликвидность</h3><p data-ru="Оценивайте среднюю цену партии, доступный объём, вложение, чистую прибыль и ROI." data-en="Estimate average batch price, available depth, investment, net profit, and ROI.">Оценивайте среднюю цену партии, доступный объём, вложение, чистую прибыль и ROI.</p></article>
-        <article class="feature-card reveal"><span class="feature-index">04</span><h3 data-ru="Точные фильтры" data-en="Exact filters">Точные фильтры</h3><p data-ru="Выбирайте конкретные кейсы, скины, износ и варианты StatTrak — без сканирования лишнего." data-en="Select exact cases, skins, wear, and StatTrak variants without scanning noise.">Выбирайте конкретные кейсы, скины, износ и варианты StatTrak — без сканирования лишнего.</p></article>
-        <article class="feature-card reveal"><span class="feature-index">05</span><h3 data-ru="Ручные и внешние Steam-цены" data-en="Steam reference options">Ручные и внешние Steam-цены</h3><p data-ru="Используйте подтверждённую Steam-цену, ручной ориентир или подключённый reference-источник." data-en="Use validated Steam prices, manual references, or a connected reference source.">Используйте подтверждённую Steam-цену, ручной ориентир или подключённый reference-источник.</p></article>
-        <article class="feature-card reveal"><span class="feature-index">06</span><h3 data-ru="Открытие конкретного оффера" data-en="Direct offer opening">Открытие конкретного оффера</h3><p data-ru="После анализа Xxant открывает страницу найденного предложения. Решение всегда принимает пользователь." data-en="After analysis, Xxant opens the detected listing page. You always make the decision.">После анализа Xxant открывает страницу найденного предложения. Решение всегда принимает пользователь.</p></article>
+        <article class="feature-card reveal"><span class="feature-index">01</span><h3>Spread Finder</h3><p data-ru="Ищет предметы с минимальным разрывом между Steam-автобаем и первым лотом маркета и отдельно показывает ожидаемый выход баланса." data-en="Finds items with the smallest gap between the Steam buy order and the first marketplace listing, while separately showing estimated balance output.">Ищет предметы с минимальным разрывом между Steam-автобаем и первым лотом маркета и отдельно показывает ожидаемый выход баланса.</p></article>
+        <article class="feature-card reveal"><span class="feature-index">02</span><h3 data-ru="Сравнение цен" data-en="Price comparison">Сравнение цен</h3><p data-ru="Для одного скина показывает лучшую цену отдельно по FN, MW, FT, WW и BS, а также второй результат и экономию." data-en="For one skin, shows the best price for FN, MW, FT, WW, and BS, together with the runner-up and savings.">Для одного скина показывает лучшую цену отдельно по FN, MW, FT, WW и BS, а также второй результат и экономию.</p></article>
+        <article class="feature-card reveal"><span class="feature-index">03</span><h3 data-ru="Мульти-маркет сканирование" data-en="Multi-market scanning">Мульти-маркет сканирование</h3><p data-ru="Собирает предложения подключённых площадок и ранжирует потенциальные сделки после выбранных расходов." data-en="Collects offers from connected marketplaces and ranks potential deals after your configured costs.">Собирает предложения подключённых площадок и ранжирует потенциальные сделки после выбранных расходов.</p></article>
+        <article class="feature-card reveal"><span class="feature-index">04</span><h3 data-ru="Формула и точные комиссии" data-en="Formula and exact fees">Формула и точные комиссии</h3><p data-ru="Учитывает последовательные расходы и точную комиссию Steam, включая минимальные сборы на дешёвых предметах." data-en="Applies sequential costs and Steam's exact fee calculation, including minimum fees on low-priced items.">Учитывает последовательные расходы и точную комиссию Steam, включая минимальные сборы на дешёвых предметах.</p></article>
+        <article class="feature-card reveal"><span class="feature-index">05</span><h3 data-ru="Каталог и точные фильтры" data-en="Catalog and exact filters">Каталог и точные фильтры</h3><p data-ru="Выбирайте категории, конкретные скины, износ и StatTrak — Xxant проверит только нужные варианты." data-en="Select categories, exact skins, wear, and StatTrak variants so Xxant checks only what matters.">Выбирайте категории, конкретные скины, износ и StatTrak — Xxant проверит только нужные варианты.</p></article>
+        <article class="feature-card reveal"><span class="feature-index">06</span><h3 data-ru="Ликвидность без догадок" data-en="Liquidity without guesswork">Ликвидность без догадок</h3><p data-ru="Класс ликвидности строится по доступной официальной статистике продаж; если истории нет, Xxant честно показывает «нет данных»." data-en="Liquidity grades use available official sales statistics; when history is unavailable, Xxant clearly reports no data.">Класс ликвидности строится по доступной официальной статистике продаж; если истории нет, Xxant честно показывает «нет данных».</p></article>
       </div>
+    </section>
+
+    <section class="section modules" id="modules">
+      <div class="section-heading reveal">
+        <p class="eyebrow" data-ru="Три задачи — три точных инструмента" data-en="Three tasks — three focused tools">Три задачи — три точных инструмента</p>
+        <h2 data-ru="Как работают основные модули" data-en="How the core modules work">Как работают основные модули</h2>
+        <p data-ru="Каждый модуль отвечает на отдельный вопрос и не смешивает разные типы расчётов в одной таблице." data-en="Each module answers a separate question instead of mixing different calculations in one table.">Каждый модуль отвечает на отдельный вопрос и не смешивает разные типы расчётов в одной таблице.</p>
+      </div>
+
+      <article class="module-panel module-panel-featured reveal">
+        <button class="module-visual" type="button" data-image="site-assets/spread-finder.png"><img src="site-assets/spread-finder.png" alt="Spread Finder results"></button>
+        <div class="module-copy">
+          <span class="module-kicker">SPREAD FINDER</span>
+          <h3 data-ru="Поиск предметов для вывода Steam-баланса" data-en="Item discovery for Steam balance cashout">Поиск предметов для вывода Steam-баланса</h3>
+          <p data-ru="Xxant проверяет цену покупки предмета в Steam, текущий Steam-автобай и первый доступный лот на внешнем маркете. Зазор показывает, насколько близки цена маркета и Steam-автобай: чем меньше процент, тем лучше совпадение." data-en="Xxant checks the Steam purchase price, the current Steam buy order, and the first available external-market listing. The gap shows how closely the market price matches the Steam buy order: the lower the percentage, the closer the match.">Xxant проверяет цену покупки предмета в Steam, текущий Steam-автобай и первый доступный лот на внешнем маркете. Зазор показывает, насколько близки цена маркета и Steam-автобай: чем меньше процент, тем лучше совпадение.</p>
+          <ul class="module-points">
+            <li data-ru="Диапазон бюджета задаётся по цене покупки в Steam." data-en="The budget range is based on the Steam purchase price.">Диапазон бюджета задаётся по цене покупки в Steam.</li>
+            <li data-ru="«Выход баланса» показывает отношение цены маркета к покупке в Steam до комиссии внешнего маркета." data-en="Balance output compares the market price with the Steam purchase price before external marketplace fees.">«Выход баланса» показывает отношение цены маркета к покупке в Steam до комиссии внешнего маркета.</li>
+            <li data-ru="Продажи и класс ликвидности отображаются только при наличии подходящей официальной статистики." data-en="Sales and liquidity grades are shown only when suitable official statistics are available.">Продажи и класс ликвидности отображаются только при наличии подходящей официальной статистики.</li>
+          </ul>
+          <small class="module-disclaimer" data-ru="Процент на скриншоте — пример результата в конкретный момент, а не обещание постоянного курса вывода." data-en="The percentage in the screenshot is a point-in-time example, not a promise of a permanent cashout rate.">Процент на скриншоте — пример результата в конкретный момент, а не обещание постоянного курса вывода.</small>
+        </div>
+      </article>
+
+      <article class="module-panel reveal">
+        <div class="module-copy">
+          <span class="module-kicker" data-ru="СРАВНЕНИЕ ЦЕН" data-en="PRICE COMPARISON">СРАВНЕНИЕ ЦЕН</span>
+          <h3 data-ru="Один скин — лучшая площадка для каждого износа" data-en="One skin — the best marketplace for every wear">Один скин — лучшая площадка для каждого износа</h3>
+          <p data-ru="Выберите точный скин и нужные качества. Xxant сравнит подключённые площадки и отдельно покажет минимальную цену для FN, MW, FT, WW и BS, второй результат и разницу между ними." data-en="Choose an exact skin and the wear levels you need. Xxant compares connected marketplaces and separately shows the minimum price for FN, MW, FT, WW, and BS, the runner-up, and the difference between them.">Выберите точный скин и нужные качества. Xxant сравнит подключённые площадки и отдельно покажет минимальную цену для FN, MW, FT, WW и BS, второй результат и разницу между ними.</p>
+          <ul class="module-points"><li data-ru="Подходит для быстрой проверки покупки конкретного скина." data-en="Useful for quickly checking where to buy an exact skin.">Подходит для быстрой проверки покупки конкретного скина.</li><li data-ru="Победитель может отличаться для каждого качества." data-en="The winning marketplace can differ for each wear.">Победитель может отличаться для каждого качества.</li><li data-ru="Решение о покупке остаётся за пользователем." data-en="The purchase decision remains with the user.">Решение о покупке остаётся за пользователем.</li></ul>
+        </div>
+        <button class="module-visual" type="button" data-image="site-assets/price-comparison.png"><img src="site-assets/price-comparison.png" alt="Price comparison by skin wear"></button>
+      </article>
+
+      <article class="module-panel reveal">
+        <button class="module-visual" type="button" data-image="site-assets/deal-details.png"><img src="site-assets/deal-details.png" alt="Xxant detected deals summary"></button>
+        <div class="module-copy">
+          <span class="module-kicker" data-ru="ГЛАВНЫЙ СКАНЕР" data-en="MAIN SCANNER">ГЛАВНЫЙ СКАНЕР</span>
+          <h3 data-ru="Потенциальные сделки после ваших расходов" data-en="Potential deals after your costs">Потенциальные сделки после ваших расходов</h3>
+          <p data-ru="Основной сканер ищет предложения, которые проходят выбранный ROI, бюджет, размер партии и защитные фильтры. После формулы расходов таблица показывает вложение, ожидаемую чистую прибыль, доступность и источник каждого оффера." data-en="The main scanner finds offers that pass your ROI, budget, batch-size, and safety filters. After applying the cost formula, the table shows investment, estimated net profit, availability, and the source of every listing.">Основной сканер ищет предложения, которые проходят выбранный ROI, бюджет, размер партии и защитные фильтры. После формулы расходов таблица показывает вложение, ожидаемую чистую прибыль, доступность и источник каждого оффера.</p>
+          <ul class="module-points"><li data-ru="Подозрительные скидки и слишком дешёвые офферы можно отсечь до расчёта." data-en="Suspicious discounts and unusually cheap listings can be filtered before calculation.">Подозрительные скидки и слишком дешёвые офферы можно отсечь до расчёта.</li><li data-ru="Двойной клик открывает исходное предложение для ручной проверки." data-en="Double-click opens the source listing for manual verification.">Двойной клик открывает исходное предложение для ручной проверки.</li><li data-ru="Xxant не гарантирует наличие или прибыль: цены и лоты могут измениться." data-en="Xxant does not guarantee availability or profit: prices and listings can change.">Xxant не гарантирует наличие или прибыль: цены и лоты могут измениться.</li></ul>
+        </div>
+      </article>
     </section>
 
     <section class="section workflow" id="workflow">
@@ -147,15 +193,16 @@
         <p data-ru="Нажмите на изображение, чтобы открыть его полностью." data-en="Click an image to view it full size.">Нажмите на изображение, чтобы открыть его полностью.</p>
       </div>
       <div class="gallery">
-        <button class="shot shot-wide reveal" type="button" data-image="site-assets/scanner-results.png"><img src="site-assets/scanner-results.png" alt="Scanner results"><span data-ru="Результаты сканирования" data-en="Scan results">Результаты сканирования</span></button>
-        <button class="shot reveal" type="button" data-image="site-assets/deal-details.png"><img src="site-assets/deal-details.png" alt="Deal details"><span data-ru="Подробная сводка сделок" data-en="Detailed deal summary">Подробная сводка сделок</span></button>
-        <button class="shot reveal" type="button" data-image="site-assets/case-catalog.png"><img src="site-assets/case-catalog.png" alt="Case catalog"><span data-ru="Каталог и ручные цены" data-en="Catalog and manual prices">Каталог и ручные цены</span></button>
+        <button class="shot shot-wide reveal" type="button" data-image="site-assets/spread-finder.png"><img src="site-assets/spread-finder.png" alt="Spread Finder results"><span>Spread Finder</span></button>
+        <button class="shot reveal" type="button" data-image="site-assets/scanner-results.png"><img src="site-assets/scanner-results.png" alt="Main scanner results"><span data-ru="Главный сканер и найденные предложения" data-en="Main scanner and detected offers">Главный сканер и найденные предложения</span></button>
+        <button class="shot reveal" type="button" data-image="site-assets/deal-details.png"><img src="site-assets/deal-details.png" alt="Deal details"><span data-ru="Расширенная сводка сделок" data-en="Detailed deal summary">Расширенная сводка сделок</span></button>
+        <button class="shot reveal" type="button" data-image="site-assets/price-comparison.png"><img src="site-assets/price-comparison.png" alt="AK-47 price comparison"><span data-ru="Сравнение цен по износам — AK-47" data-en="Price comparison by wear — AK-47">Сравнение цен по износам — AK-47</span></button>
+        <button class="shot reveal" type="button" data-image="site-assets/price-comparison-code-red.png"><img src="site-assets/price-comparison-code-red.png" alt="Desert Eagle price comparison"><span data-ru="Сравнение цен по износам — Desert Eagle" data-en="Price comparison by wear — Desert Eagle">Сравнение цен по износам — Desert Eagle</span></button>
         <button class="shot reveal" type="button" data-image="site-assets/formula-settings.png"><img src="site-assets/formula-settings.png" alt="Formula settings"><span data-ru="Гибкая формула расходов" data-en="Flexible cost formula">Гибкая формула расходов</span></button>
-        <button class="shot reveal" type="button" data-image="site-assets/item-filter.png"><img src="site-assets/item-filter.png" alt="Item filters"><span data-ru="Точные фильтры предметов" data-en="Exact item filters">Точные фильтры предметов</span></button>
-        <button class="shot reveal" type="button" data-image="site-assets/item-catalog.png"><img src="site-assets/item-catalog.png" alt="Item catalog"><span data-ru="Каталог скинов и точный поиск" data-en="Skin catalog and exact search">Каталог скинов и точный поиск</span></button>
-        <button class="shot reveal" type="button" data-image="site-assets/batch-settings.png"><img src="site-assets/batch-settings.png" alt="Batch settings"><span data-ru="Настройка партии и бюджета" data-en="Batch and budget settings">Настройка партии и бюджета</span></button>
-        <button class="shot reveal" type="button" data-image="site-assets/steam-settings.png"><img src="site-assets/steam-settings.png" alt="Steam reference settings"><span data-ru="Источник Steam-цены" data-en="Steam price reference">Источник Steam-цены</span></button>
+        <button class="shot reveal" type="button" data-image="site-assets/item-filter.png"><img src="site-assets/item-filter.png" alt="Item filters"><span data-ru="Категории и точные фильтры" data-en="Categories and exact filters">Категории и точные фильтры</span></button>
+        <button class="shot reveal" type="button" data-image="site-assets/item-catalog.png"><img src="site-assets/item-catalog.png" alt="Item catalog"><span data-ru="Каталог скинов и точный выбор" data-en="Skin catalog and exact selection">Каталог скинов и точный выбор</span></button>
       </div>
+      <p class="development-note reveal" data-ru="На скриншоте главного окна видна карточка Pattern Hunter. Модуль находится в разработке и тестировании, по умолчанию работает в тестовом режиме и пока не заявляется как готовая функция автоматической покупки." data-en="The main-window screenshot includes the Pattern Hunter card. This module is still under development and testing, defaults to test mode, and is not yet presented as a production-ready automatic purchasing feature.">На скриншоте главного окна видна карточка Pattern Hunter. Модуль находится в разработке и тестировании, по умолчанию работает в тестовом режиме и пока не заявляется как готовая функция автоматической покупки.</p>
     </section>
 
     <section class="section markets" id="markets">
@@ -165,21 +212,30 @@
         <p data-ru="Доступность зависит от публичного API, личного ключа и условий конкретной площадки." data-en="Availability depends on public APIs, personal credentials, and each marketplace's terms.">Доступность зависит от публичного API, личного ключа и условий конкретной площадки.</p>
       </div>
       <div class="market-cloud reveal">
-        <span>Skinport</span><span>CSFloat</span><span>Market.CSGO</span><span>DMarket</span><span>Waxpeer</span><span>White.Market</span><span>ShadowPay</span><span>SkinBaron</span><span>SIH Market</span>
+        <span>Skinport</span><span>CSFloat</span><span>Market.CSGO</span><span>DMarket</span><span>Waxpeer</span><span>White.Market</span><span>ShadowPay</span><span>SIH Market</span><span>CS.Deals</span><span>LIS-SKINS</span>
       </div>
+    </section>
+
+    <section class="section telegram-section reveal" aria-label="Official Telegram channel">
+      <div>
+        <p class="eyebrow" data-ru="Официальный канал" data-en="Official channel">Официальный канал</p>
+        <h2 data-ru="Обновления Xxant в Telegram" data-en="Xxant updates on Telegram">Обновления Xxant в Telegram</h2>
+        <p data-ru="Новости разработки, новые версии, важные исправления и объявления публикуются в официальном канале @XxantScanner." data-en="Development news, new versions, important fixes, and announcements are published in the official @XxantScanner channel.">Новости разработки, новые версии, важные исправления и объявления публикуются в официальном канале @XxantScanner.</p>
+      </div>
+      <a class="button button-telegram telegram-cta" href="https://t.me/XxantScanner" target="_blank" rel="noopener noreferrer">Открыть @XxantScanner</a>
     </section>
 
     <section class="section security" id="security">
       <div class="security-copy reveal">
         <p class="eyebrow" data-ru="Безопасность по умолчанию" data-en="Security by default">Безопасность по умолчанию</p>
         <h2 data-ru="Ваши аккаунты остаются вашими" data-en="Your accounts remain yours">Ваши аккаунты остаются вашими</h2>
-        <p data-ru="Xxant не запрашивает пароль Steam, не хранит платёжные данные и не совершает автоматические сделки. API-ключи сохраняются локально в зашифрованном виде." data-en="Xxant does not request your Steam password, store payment information, or execute automatic trades. API keys are stored locally in encrypted form.">Xxant не запрашивает пароль Steam, не хранит платёжные данные и не совершает автоматические сделки. API-ключи сохраняются локально в зашифрованном виде.</p>
+        <p data-ru="Xxant не запрашивает пароль Steam и не хранит платёжные данные. API-ключи сохраняются локально в зашифрованном виде. Основной сканер, Spread Finder и сравнение цен работают без автоматической покупки; Pattern Hunter пока остаётся тестовым модулем." data-en="Xxant does not request your Steam password or store payment information. API keys are stored locally in encrypted form. The main scanner, Spread Finder, and Price Comparison work without automatic purchasing; Pattern Hunter remains a test module.">Xxant не запрашивает пароль Steam и не хранит платёжные данные. API-ключи сохраняются локально в зашифрованном виде. Основной сканер, Spread Finder и сравнение цен работают без автоматической покупки; Pattern Hunter пока остаётся тестовым модулем.</p>
         <a class="text-link" href="privacy.html" data-ru="Политика конфиденциальности →" data-en="Privacy policy →">Политика конфиденциальности →</a>
       </div>
       <div class="security-list reveal">
         <div><b>01</b><span data-ru="Windows DPAPI для локальных секретов" data-en="Windows DPAPI for local secrets">Windows DPAPI для локальных секретов</span></div>
         <div><b>02</b><span data-ru="Один лицензионный ключ — одно устройство" data-en="One license key — one device">Один лицензионный ключ — одно устройство</span></div>
-        <div><b>03</b><span data-ru="Только чтение рыночных данных" data-en="Read-only market data access">Только чтение рыночных данных</span></div>
+        <div><b>03</b><span data-ru="Основные модули используют рыночные данные для анализа" data-en="Core modules use market data for analysis">Основные модули используют рыночные данные для анализа</span></div>
         <div><b>04</b><span data-ru="Подтверждение действий на стороне площадки" data-en="Actions are confirmed on the marketplace">Подтверждение действий на стороне площадки</span></div>
       </div>
     </section>
@@ -191,14 +247,14 @@
           <h2 data-ru="Установщик Xxant готов к проверке" data-en="The Xxant installer is ready for testing">Установщик Xxant готов к проверке</h2>
           <p data-ru="Скачайте тестовую версию для Windows 10/11 x64. Для запуска нужен тестовый лицензионный ключ. Сборка пока не подписана цифровой подписью, поэтому Windows SmartScreen может показать предупреждение." data-en="Download the test build for Windows 10/11 x64. A test license key is required. This build is not digitally signed yet, so Windows SmartScreen may display a warning.">Скачайте тестовую версию для Windows 10/11 x64. Для запуска нужен тестовый лицензионный ключ. Сборка пока не подписана цифровой подписью, поэтому Windows SmartScreen может показать предупреждение.</p>
         </div>
-        <div class="access-card"><span data-ru="Версия 0.50 Update Center" data-en="Version 0.50 Update Center">Версия 0.50 Update Center</span><strong data-ru="Уведомления об обновлениях и новый Spread Finder" data-en="Update notifications and the new Spread Finder">Уведомления об обновлениях и новый Spread Finder</strong><small data-ru="1 устройство · проверка лицензии сервером · Windows 10/11 x64" data-en="1 device · server-verified license · Windows 10/11 x64">1 устройство · проверка лицензии сервером · Windows 10/11 x64</small><a class="button button-primary" href="downloads/Xxant-CS2-Scanner-Setup.exe?v=0.50.0" data-ru="Скачать тестовую версию" data-en="Download test build">Скачать тестовую версию</a><a class="text-link" href="updates.html" data-ru="Что изменилось →" data-en="What's new →">Что изменилось →</a><a href="downloads/Xxant-CS2-Scanner-Setup.exe.sha256?v=0.50.0" data-ru="Проверить SHA-256" data-en="Verify SHA-256">Проверить SHA-256</a></div>
+        <div class="access-card"><span data-ru="Версия 0.61 Slate UI" data-en="Version 0.61 Slate UI">Версия 0.61 Slate UI</span><strong data-ru="Новый интерфейс, Spread Finder и сравнение цен" data-en="New interface, Spread Finder, and Price Comparison">Новый интерфейс, Spread Finder и сравнение цен</strong><small data-ru="1 устройство · проверка лицензии сервером · Windows 10/11 x64" data-en="1 device · server-verified license · Windows 10/11 x64">1 устройство · проверка лицензии сервером · Windows 10/11 x64</small><a class="button button-primary" href="downloads/Xxant-CS2-Scanner-Setup.exe?v=0.61.0" data-ru="Скачать тестовую версию" data-en="Download test build">Скачать тестовую версию</a><a class="text-link" href="updates.html" data-ru="Что изменилось →" data-en="What's new →">Что изменилось →</a><a href="downloads/Xxant-CS2-Scanner-Setup.exe.sha256?v=0.61.0" data-ru="Проверить SHA-256" data-en="Verify SHA-256">Проверить SHA-256</a></div>
       </div>
     </section>
 
     <section class="section faq" id="faq">
       <div class="section-heading reveal"><p class="eyebrow">FAQ</p><h2 data-ru="Коротко о главном" data-en="Essential answers">Коротко о главном</h2></div>
       <div class="faq-list">
-        <details class="reveal"><summary data-ru="Xxant покупает предметы автоматически?" data-en="Does Xxant buy items automatically?">Xxant покупает предметы автоматически?</summary><p data-ru="Обычный сканер только анализирует рынок. Отдельный Pattern Hunter может отправлять автоматические покупки лишь для поддерживаемых API-маркетов, после явного подтверждения режима и строго в пределах лимитов пользователя." data-en="The regular scanner only analyzes the market. The separate Pattern Hunter can submit automatic purchases only on supported API marketplaces, after explicit mode confirmation and strictly within user-defined limits.">Обычный сканер только анализирует рынок. Отдельный Pattern Hunter может отправлять автоматические покупки лишь для поддерживаемых API-маркетов, после явного подтверждения режима и строго в пределах лимитов пользователя.</p></details>
+        <details class="reveal"><summary data-ru="Xxant покупает предметы автоматически?" data-en="Does Xxant buy items automatically?">Xxant покупает предметы автоматически?</summary><p data-ru="Основной сканер, Spread Finder и сравнение цен ничего не покупают: они анализируют данные и открывают выбранный оффер для ручного решения. Pattern Hunter находится в разработке и тестировании, по умолчанию использует тестовый режим без buy-запросов и пока не считается готовой функцией автопокупки." data-en="The main scanner, Spread Finder, and Price Comparison never buy anything: they analyze data and open the selected listing for a manual decision. Pattern Hunter is still under development and testing, defaults to test mode without buy requests, and is not yet considered a production-ready autobuy feature.">Основной сканер, Spread Finder и сравнение цен ничего не покупают: они анализируют данные и открывают выбранный оффер для ручного решения. Pattern Hunter находится в разработке и тестировании, по умолчанию использует тестовый режим без buy-запросов и пока не считается готовой функцией автопокупки.</p></details>
         <details class="reveal"><summary data-ru="Нужно ли вводить пароль Steam?" data-en="Do I need to enter my Steam password?">Нужно ли вводить пароль Steam?</summary><p data-ru="Нет. В Xxant нет поля для пароля Steam. Авторизация происходит только на официальных сайтах, открытых в вашем браузере." data-en="No. Xxant has no Steam-password field. Authentication occurs only on official sites opened in your browser.">Нет. В Xxant нет поля для пароля Steam. Авторизация происходит только на официальных сайтах, открытых в вашем браузере.</p></details>
         <details class="reveal"><summary data-ru="Гарантирует ли программа прибыль?" data-en="Does the software guarantee profit?">Гарантирует ли программа прибыль?</summary><p data-ru="Нет. Результаты являются расчётной оценкой по данным API и настройкам пользователя. Цены и наличие могут измениться." data-en="No. Results are estimates based on API data and your settings. Prices and availability can change.">Нет. Результаты являются расчётной оценкой по данным API и настройкам пользователя. Цены и наличие могут измениться.</p></details>
         <details class="reveal"><summary data-ru="Где хранятся API-ключи?" data-en="Where are API keys stored?">Где хранятся API-ключи?</summary><p data-ru="Локально на компьютере пользователя, в файле, зашифрованном средствами Windows DPAPI." data-en="Locally on the user's computer in a file encrypted with Windows DPAPI.">Локально на компьютере пользователя, в файле, зашифрованном средствами Windows DPAPI.</p></details>
@@ -214,7 +270,7 @@
       <a href="updates.html" data-ru="Обновления" data-en="Updates">Обновления</a>
       <a href="terms.html" data-ru="Условия" data-en="Terms">Условия</a>
       <a href="privacy.html" data-ru="Конфиденциальность" data-en="Privacy">Конфиденциальность</a>
-      <a href="https://t.me/XxantScanner" target="_blank" rel="noopener noreferrer" data-ru="Telegram-канал" data-en="Telegram channel">Telegram-канал</a>
+      <a href="https://t.me/XxantScanner" target="_blank" rel="noopener noreferrer" data-ru="Официальный Telegram · @XxantScanner" data-en="Official Telegram · @XxantScanner">Официальный Telegram · @XxantScanner</a>
       <a href="https://t.me/XxantOfficial" target="_blank" rel="noopener noreferrer" data-ru="Купить лицензию / Поддержка" data-en="Buy License / Support">Купить лицензию / Поддержка</a>
       <a href="mailto:xxantsupport@gmail.com">xxantsupport@gmail.com</a>
     </div>

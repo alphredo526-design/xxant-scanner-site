@@ -53,6 +53,8 @@ h1 { max-width: 770px; margin: 0; font-size: clamp(42px, 5.3vw, 76px); line-heig
 .button-primary:hover { background: linear-gradient(135deg, #bb2c43, #812033); }
 .button-ghost, .button-outline { background: #111720cc; border-color: #3b4655; }
 .button-ghost:hover, .button-outline:hover { border-color: #7b3342; background: #171e28; }
+.button-telegram { color: #eaf8ff; background: linear-gradient(135deg, #1f7eaa, #185f88); border-color: #3598c5; box-shadow: 0 12px 32px #12608638; }
+.button-telegram:hover { background: linear-gradient(135deg, #2991c1, #1b6b98); }
 .button-small { min-height: 38px; padding: 0 15px; font-size: 12px; }
 .hero-notes { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-top: 34px; color: var(--blue-muted); font-size: 12px; }
 .hero-notes span::before { content: "✓"; margin-right: 7px; color: var(--green); }
@@ -87,6 +89,20 @@ h1 { max-width: 770px; margin: 0; font-size: clamp(42px, 5.3vw, 76px); line-heig
 .feature-card h3 { margin: 32px 0 12px; font-size: 19px; }
 .feature-card p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.65; }
 
+.modules { padding-top: 55px; }
+.module-panel { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(360px, .85fr); gap: 36px; align-items: center; margin-top: 22px; padding: 28px; border: 1px solid var(--line); border-radius: 16px; background: linear-gradient(145deg, #111821, #0a0f15); box-shadow: 0 22px 65px #0005; }
+.module-panel-featured { border-color: #5c3440; background: radial-gradient(circle at 8% 0, #8b23383b, transparent 38%), linear-gradient(145deg, #111821, #0a0f15); }
+.module-visual { min-width: 0; overflow: hidden; padding: 0; border: 1px solid #384554; border-radius: 12px; background: #070a0e; cursor: zoom-in; box-shadow: 0 20px 48px #0009; }
+.module-visual img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; object-position: top left; transition: transform .3s ease, filter .3s ease; }
+.module-visual:hover img { transform: scale(1.012); filter: brightness(1.06); }
+.module-copy h3 { margin: 10px 0 16px; font-size: clamp(25px, 3vw, 38px); line-height: 1.12; letter-spacing: -.025em; }
+.module-copy > p { margin: 0; color: #aab6c4; line-height: 1.72; }
+.module-kicker { color: #e05b70; font-size: 11px; font-weight: 900; letter-spacing: .16em; }
+.module-points { display: grid; gap: 9px; margin: 20px 0 0; padding: 0; list-style: none; }
+.module-points li { position: relative; padding-left: 22px; color: #c3cdd9; font-size: 13px; line-height: 1.6; }
+.module-points li::before { content: "✓"; position: absolute; left: 0; top: 0; color: var(--green); font-weight: 900; }
+.module-disclaimer { display: block; margin-top: 18px; padding: 12px 14px; border-left: 2px solid #4c87aa; border-radius: 0 7px 7px 0; background: #10202a; color: #91afc3; font-size: 11px; line-height: 1.55; }
+
 .workflow { border-top: 1px solid var(--line-soft); border-bottom: 1px solid var(--line-soft); }
 .steps { display: grid; gap: 12px; }
 .step { display: grid; grid-template-columns: 90px 1fr; gap: 26px; align-items: center; padding: 25px; border: 1px solid var(--line); border-radius: 13px; background: #0e131b; }
@@ -100,12 +116,19 @@ h1 { max-width: 770px; margin: 0; font-size: clamp(42px, 5.3vw, 76px); line-heig
 .shot img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; object-position: top; transition: transform .35s ease, filter .35s ease; }
 .shot:hover img { transform: scale(1.015); filter: brightness(1.08); }
 .shot span { position: absolute; left: 18px; bottom: 16px; padding: 8px 11px; border: 1px solid #4b5663; border-radius: 7px; background: #080b10dd; font-size: 12px; font-weight: 700; backdrop-filter: blur(10px); }
+.development-note { margin: 20px 0 0; padding: 16px 18px; border: 1px solid #665132; border-left: 3px solid #d29a38; border-radius: 10px; background: #231b0f; color: #d7c39f; font-size: 13px; line-height: 1.65; }
 
 .markets { text-align: center; }
 .markets .section-heading { margin-inline: auto; }
 .market-cloud { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
 .market-cloud span { padding: 13px 19px; border: 1px solid var(--line); border-radius: 9px; background: #0d1219; color: #d8dee8; font-size: 14px; transition: border-color .2s ease, color .2s ease; }
 .market-cloud span:hover { color: #fff; border-color: #863342; }
+
+.telegram-section { display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: center; padding: 38px 42px; border: 1px solid #285b78; border-left: 4px solid #2b9bc8; border-radius: 16px; background: radial-gradient(circle at 95% 0, #218db33b, transparent 42%), #0d141b; box-shadow: 0 24px 70px #0005; }
+.telegram-section .eyebrow { margin-bottom: 10px; color: #7fc4e3; }
+.telegram-section h2 { margin: 0; font-size: clamp(28px, 3vw, 43px); letter-spacing: -.03em; }
+.telegram-section p:not(.eyebrow) { max-width: 760px; margin: 14px 0 0; color: var(--muted); line-height: 1.65; }
+.telegram-cta { min-width: 220px; }
 
 .security { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: center; padding-inline: 50px; border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: var(--radius); background: linear-gradient(135deg, #121923, #090d12); }
 .security-copy > p { margin: 24px 0; }
@@ -185,7 +208,11 @@ footer { width: min(var(--max), calc(100% - 48px)); margin: 0 auto; display: gri
   .proof-strip div:nth-child(2) { border-right: 0; }
   .proof-strip div:nth-child(-n+2) { border-bottom: 1px solid var(--line-soft); }
   .feature-grid { grid-template-columns: repeat(2, 1fr); }
+  .module-panel { grid-template-columns: 1fr; }
+  .module-panel .module-visual { order: -1; }
   .security { grid-template-columns: 1fr; gap: 35px; }
+  .telegram-section { grid-template-columns: 1fr; }
+  .telegram-cta { width: fit-content; }
 }
 
 @media (max-width: 680px) {
@@ -208,6 +235,9 @@ footer { width: min(var(--max), calc(100% - 48px)); margin: 0 auto; display: gri
   .step { grid-template-columns: 55px 1fr; gap: 15px; padding: 18px; }
   .step-number { width: 48px; height: 48px; }
   .security { padding-inline: 23px; }
+  .module-panel { gap: 24px; padding: 18px; }
+  .telegram-section { padding: 27px 24px; }
+  .telegram-cta { width: 100%; }
   .access-panel { grid-template-columns: 1fr; padding: 26px; }
   footer { width: calc(100% - 30px); grid-template-columns: 1fr; }
   .legal { grid-column: auto; }
