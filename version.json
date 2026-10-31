@@ -1,21 +1,21 @@
 {
-  "version": "0.61.0",
-  "display_version": "v0.61 Slate UI & Language Audit",
-  "released_at": "2026-10-20",
-  "download_url": "https://xxantscanner.com/downloads/Xxant-CS2-Scanner-Setup.exe?v=0.61.0",
+  "version": "0.62.0",
+  "display_version": "v0.62 Settings Cleanup & Guide",
+  "released_at": "2026-10-31",
+  "download_url": "https://xxantscanner.com/downloads/Xxant-CS2-Scanner-Setup.exe?v=0.62.0",
   "changelog_url": "https://xxantscanner.com/updates.html",
-  "sha256": "472b8db9b73a185c89486c0934b448b240e6ad942bb31213e96b8b6ecab15bb8",
-  "size_bytes": 43415058,
+  "sha256": "025e9811882952d4ec65db1ae173a79a1e227e113233d3be8be5e1c83d1446a5",
+  "size_bytes": 43514144,
   "summary": {
     "ru": [
-      "Новая графитово-синяя тема Xxant Slate и исправленная светлая тема.",
-      "Spread Finder, сравнение цен по износам и безопасные фильтры офферов.",
-      "Проверенные переводы и компактное отображение цен без лишних нулей."
+      "Убраны дублирующие вкладки «Партия кейсов» и «Steam» из настроек.",
+      "Настройки партии находятся на главном экране, а проверка Steam — в настройках маркетов.",
+      "Полностью обновлено краткое руководство по настройке и работе с модулями."
     ],
     "en": [
-      "New graphite-blue Xxant Slate theme and corrected light theme.",
-      "Spread Finder, wear-based Price Comparison, and safer listing filters.",
-      "Reviewed translations and compact price formatting without extra zeros."
+      "Removed the duplicate Case batch and Steam settings tabs.",
+      "Batch controls stay on the main screen, while Steam validation is in Market settings.",
+      "Rewritten concise guide for setup and everyday use."
     ]
   }
 }
